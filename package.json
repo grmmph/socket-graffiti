@@ -1,0 +1,16 @@
+{
+  "name": "socketgraffitti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "preferGlobal": true,
+  "scripts": {
+    "test": "npmgame",
+    "start": "shjs index.js"
+  },
+  "bin": {
+    "socketgraffitti": "index.js"
+  },
+  "author": "Yonatan Wolowelsky",
+  "license": "MIT"
+}
