@@ -11,6 +11,14 @@
   "bin": {
     "socketgraffitti": "index.js"
   },
+  "dependencies": {
+    "underscore": "latest",
+    "terminal-kit": "latest",
+    "socket.io-client": "latest",
+    "express": "latest",
+    "http": "latest",
+    "socket.io": "latest"
+  },
   "author": "Yonatan Wolowelsky",
   "license": "MIT"
 }

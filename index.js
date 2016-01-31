@@ -1,6 +1,5 @@
 #! /usr/bin/env node
-
-(function() {
+module.exports = (function() {
   "use strict";
 
   // Command line args
@@ -10,7 +9,7 @@
 
   // Imports
   var _ = require('underscore');
-  var term = require( 'terminal-kit' ).realTerminal;
+  var term = require('terminal-kit').realTerminal;
   var socket = require('socket.io-client')(defaultServer);
 
   // Constants
