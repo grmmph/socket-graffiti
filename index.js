@@ -4,7 +4,7 @@ module.exports = (function() {
 
   // Command line args
   var userArgs = process.argv.slice(2);
-  var defaultServer = 'http://localhost:9001';
+  var defaultServer = 'http://localhost:3030';
   var server = userArgs[0] || defaultServer;
 
   // Imports
@@ -116,7 +116,7 @@ module.exports = (function() {
 
   // Init
   term.clear();
-  
+
   var stage = new Stage();
   var p = new Player();
   term.windowTitle('socketgraffiti');

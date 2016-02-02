@@ -1,0 +1,16 @@
+{
+  "name": "socket-graffiti-server",
+  "version": "1.0.0",
+  "description": "Multiplayer terminal paint using web socket - server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "latest",
+    "http": "latest",
+    "socket.io": "latest"
+  },
+  "author": "Yonatan Wolowelsky",
+  "license": "MIT"
+}

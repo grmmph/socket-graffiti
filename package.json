@@ -9,7 +9,6 @@
     "url": "https://github.com/grmmph/socket-graffiti"
   },
   "scripts": {
-    "test": "npmgame",
     "start": "shjs index.js"
   },
   "bin": {
@@ -19,10 +18,7 @@
     "shelljs": "latest",
     "underscore": "latest",
     "terminal-kit": "latest",
-    "socket.io-client": "latest",
-    "express": "latest",
-    "http": "latest",
-    "socket.io": "latest"
+    "socket.io-client": "latest"
   },
   "author": "Yonatan Wolowelsky",
   "license": "MIT"
