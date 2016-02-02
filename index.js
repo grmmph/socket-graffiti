@@ -6,6 +6,7 @@ module.exports = (function() {
   const STAGE_WIDTH = 50;
   const STAGE_HEIGHT = 20;
   const DEFAULT_SERVER_URL = 'http://grmmph.com:3030';
+  const BG_COLOR = 7;
   const terminate = function () {
     term.grabInput( false ) ;
     setTimeout( function() { process.exit() } , 100 ) ;
@@ -27,7 +28,7 @@ module.exports = (function() {
     constructor() {
       this.grid = _.times(STAGE_HEIGHT, (i) => {
         return _.times(STAGE_WIDTH, () => {
-          return 7;
+          return BG_COLOR;
         });
       });
     }
@@ -76,6 +77,13 @@ module.exports = (function() {
 
     draw() {
       stage.updateGridItem(this.x, this.y, this.color);
+      this.move('RIGHT');
+
+      socket.emit('update', stage.grid);
+    };
+
+    earse() {
+      stage.updateGridItem(this.x, this.y, BG_COLOR);
       this.move('RIGHT');
 
       socket.emit('update', stage.grid);
@@ -134,8 +142,13 @@ module.exports = (function() {
     if (key === "x") {
       p.draw();
     }
+
     if (key === "c") {
       p.changeColor();
+    }
+
+    if (key === "z") {
+      p.earse();
     }
     if (key === 'CTRL_C') {
       terminate();
