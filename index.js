@@ -2,23 +2,23 @@
 module.exports = (function() {
   "use strict";
 
-  // Command line args
-  var userArgs = process.argv.slice(2);
-  var defaultServer = 'http://localhost:3030';
-  var server = userArgs[0] || defaultServer;
-
-  // Imports
-  var _ = require('underscore');
-  var term = require('terminal-kit').realTerminal;
-  var socket = require('socket.io-client')(defaultServer);
-
   // Constants
   const STAGE_WIDTH = 50;
   const STAGE_HEIGHT = 20;
+  const DEFAULT_SERVER_URL = 'http://grmmph.com:3030';
   const terminate = function () {
     term.grabInput( false ) ;
     setTimeout( function() { process.exit() } , 100 ) ;
   };
+
+  // Command line args
+  var userArgs = process.argv.slice(2);
+  var serverUrl = userArgs[0] || DEFAULT_SERVER_URL;
+
+  // Imports
+  var _ = require('underscore');
+  var term = require('terminal-kit').realTerminal;
+  var socket = require('socket.io-client')(serverUrl);
 
   /**
    * @class Stage
