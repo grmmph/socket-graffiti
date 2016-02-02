@@ -1,9 +1,13 @@
 {
-  "name": "socketgraffiti",
-  "version": "1.0.0",
-  "description": "",
+  "name": "socket-graffiti",
+  "version": "1.0.1",
+  "description": "Multiplayer terminal paint using web socket.",
   "main": "index.js",
   "preferGlobal": true,
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/grmmph/socket-graffiti"
+  },
   "scripts": {
     "test": "npmgame",
     "start": "shjs index.js"
