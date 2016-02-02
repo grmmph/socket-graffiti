@@ -27,7 +27,7 @@ module.exports = (function() {
     constructor() {
       this.grid = _.times(STAGE_HEIGHT, (i) => {
         return _.times(STAGE_WIDTH, () => {
-          return 3;
+          return 7;
         });
       });
     }
@@ -115,13 +115,14 @@ module.exports = (function() {
   };
 
   // Init
-  var p = new Player();
+  term.clear();
+  
   var stage = new Stage();
+  var p = new Player();
   term.windowTitle('socketgraffiti');
   term.setCursorColorRgb(40,50,30)
-  term.clear();
   term.grabInput(true);
-  stage.updateGridItem(4,4,4);
+  stage.drawStage();
 
   // Events callbacks
   socket.on('updated', function(grid) {

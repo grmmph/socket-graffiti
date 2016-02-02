@@ -12,6 +12,7 @@
     "socket-graffiti": "index.js"
   },
   "dependencies": {
+    "shelljs": "latest",
     "underscore": "latest",
     "terminal-kit": "latest",
     "socket.io-client": "latest",
