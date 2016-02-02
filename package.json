@@ -1,5 +1,5 @@
 {
-  "name": "socketgraffitti",
+  "name": "socketgraffiti",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "start": "shjs index.js"
   },
   "bin": {
-    "socketgraffitti": "index.js"
+    "socket-graffiti": "index.js"
   },
   "dependencies": {
     "underscore": "latest",

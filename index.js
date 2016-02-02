@@ -117,7 +117,7 @@ module.exports = (function() {
   // Init
   var p = new Player();
   var stage = new Stage();
-  term.windowTitle('socketgraffitti');
+  term.windowTitle('socketgraffiti');
   term.setCursorColorRgb(40,50,30)
   term.clear();
   term.grabInput(true);
