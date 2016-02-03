@@ -1,4 +1,5 @@
 (function () {
+  "use strict";
   const PORT = 3030;
 
   var _ = require('underscore');
