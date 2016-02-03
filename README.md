@@ -7,11 +7,13 @@ Paint your terminal in 16 colors with your friends, remotely over web socket.
 ## Painting
 `socket-graffiti`
 
-`X` for Painting
+Move with the arrows.
 
-`C` for changing color
+`X` for Painting.
 
-`Z` for erasing
+`C` for changing color.
+
+`Z` for erasing.
 
 ## Running your own server
 `socket-graffiti localhost:8888`
